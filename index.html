@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Resume Matcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<style>
+      @keyframes flicker {
+        0%, 100% {
+          filter: drop-shadow(0 0 3px rgba(14, 165, 233, 0.7)) drop-shadow(0 0 8px rgba(14, 165, 233, 0.5));
+        }
+        50% {
+          filter: drop-shadow(0 0 1px rgba(14, 165, 233, 0.5));
+        }
+      }
+      .flicker-effect {
+        animation: flicker 2s ease-in-out infinite;
+      }
+    </style>
+</head>
+  <body class="bg-slate-900">
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/mammoth@1.6.0/mammoth.browser.min.js"></script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
